@@ -1,0 +1,9 @@
+@MISC{example-repo-0.1,
+key = {Bannenberg repo},
+author = {Bannenberg M.W.F.M.},
+title = {{Deliverable-5-3} -- {Reduced Order Multirate Simulation of Circuits} (Version 1.0)},
+month = April,
+year = 2021,
+doi = {10.xxxx/zenodo.xxxxxxx},
+note = {see also: \url{https://github.com/ROMSOC/benchmarks-ROMR-schemes}}
+}

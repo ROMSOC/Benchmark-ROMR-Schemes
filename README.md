@@ -9,19 +9,25 @@ The benchmark case can be run by opening the ROMSOC.m file.
 ## Directory structure
 ```
 .
-├── source
-│   └── source files (and subfolders if any)
-├── benchmarks
-    ├── data files (input)
-    ├── result files (output)
-│   └── source files (and subfolders if any)
-├── documentation
-│   └── source files (and subfolders if any)
+├── Circuits
+├── Components
+│   ├── Diodes
+│   ├── MOSFETS
+│   └── Vsources
+├── Documentation
+├── Numerical
+│   ├── Integration
+│   ├── Jacobian
+│   ├── MOR
+│   ├── NonLinear
+│   └── Visual
+├── Parser
+├── Images
 ├── CITATION
 ├── CONTRIBUTORS
-├── CHANGELOG
 ├── LICENSE
 ├── README
+├── ROMSOC.m
 └── .gitignore
 ```
 ## Disclaimer

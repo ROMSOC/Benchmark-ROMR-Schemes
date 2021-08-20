@@ -1,4 +1,5 @@
 # Example of a ROMSOC benchmark repository
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5171813.svg)](https://doi.org/10.5281/zenodo.5171813)
 
 ## Summary
 This document presents a benchmark case for the application of reduced order multirate schemes in a MATLAB environment.

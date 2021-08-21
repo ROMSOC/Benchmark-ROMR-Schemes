@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Bannenberg"
+  given-names: "M.W.F.M."
+  orcid: "https://orcid.org/0000-0002-2869-9031"
+- family-names: "Günther"
+  given-names: "Michael"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Ciccazzo"
+  given-names: "Angelo"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Gangemi"
+  given-names: "Giuliana"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "Benchmarks for Reduced Order Multirate Simulation of Circuits"
+version: 1.0.0
+doi: 10.5281/zenodo.5171813
+date-released: 2021-01-06
+url: "https://github.com/ROMSOC/benchmarks-ROMR-schemes"

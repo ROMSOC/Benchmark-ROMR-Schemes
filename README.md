@@ -1,3 +1,5 @@
+<img src="images/romsoclogo-logo.png" alt="ROMSOC logo"  width="150"/>
+
 # Benchmarks for the application of reduced order multirate schemes
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5171813.svg)](https://doi.org/10.5281/zenodo.5171813)
 
@@ -40,6 +42,7 @@ USING THE SOFTWARE, YOU AGREE TO THE TERMS ABOVE. IF YOU DO NOT AGREE TO
 THESE TERMS, DO NOT INSTALL OR USE THE SOFTWARE
 
 ## Acknowledgments
-<img src="/images/EU_Flag.png" alt="EU Flag"  width="150" height="100" />
+<img src="images/EU_Flag.png" alt="EU Flag"  width="150" height="100" />
+
 The ROMSOC project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie Grant Agreement No. 765374.
 This repository reflects the views of the author(s) and does not necessarily reflect the views or policy of the European Commission. The REA cannot be held responsible for any use that may be made of the information this repository contains.

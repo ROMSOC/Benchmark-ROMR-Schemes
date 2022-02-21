@@ -129,7 +129,7 @@ function [E, A, func_p, func_r, x0] = parse_netlist(fname)
     for i=1:numC
         n1=Capacitor(i).Node1;
         n2=Capacitor(i).Node2;
-        C_diag(i,i) = Capacitor(i).Value();
+        C_diag(i,i) = Capacitor(i).Value;
         if (n1~=0) && (n2~=0)
             A_C(n1,i)=A_C(n1,i) + 1;
             A_C(n2,i)=A_C(n2,i) - 1;
@@ -145,7 +145,7 @@ function [E, A, func_p, func_r, x0] = parse_netlist(fname)
     for i=1:numL
         n1=Inductor(i).Node1;
         n2=Inductor(i).Node2;
-        L_diag(i,i) = Inductor(i).Value();
+        L_diag(i,i) = Inductor(i).Value;
         if (n1~=0) && (n2~=0)
             A_L(n1,i)=A_L(n1,i) + 1;
             A_L(n2,i)=A_L(n2,i) - 1;
@@ -167,7 +167,7 @@ function [E, A, func_p, func_r, x0] = parse_netlist(fname)
     for i=1:numR
         n1=Resistor(i).Node1;
         n2=Resistor(i).Node2;
-        R_diag(i,i) = 1/Resistor(i).Value();
+        R_diag(i,i) = 1/Resistor(i).Value;
         if (n1~=0) && (n2~=0)
             A_R(n1,i)=A_R(n1,i) + 1;
             A_R(n2,i)=A_R(n2,i) - 1;

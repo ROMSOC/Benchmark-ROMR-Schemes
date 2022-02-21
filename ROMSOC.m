@@ -42,10 +42,10 @@ idx_L = [4:M-1]';
 
 % Compute reference solution
 try
-    B = strcat(regexprep(cellfun(@func2str, func_p, 'uni', 0), '^@\(x\)', ''), ';');
+    B = strcat(regexprep(cellfun(@func2str, func_p, 'uni', 0), {'^@\(x\)','\s'}, ''), ';');
     func_p_ode =  str2func(strcat('@(x) [', B{:}, ']'));
     
-    B = strcat(regexprep(cellfun(@func2str, func_r, 'uni', 0), '^@\(t\)', ''), ';');
+    B = strcat(regexprep(cellfun(@func2str, func_r, 'uni', 0), {'^@\(t\)','\s'}, ''), ';');
     func_r_ode =  str2func(strcat('@(t) [', B{:}, ']'));
 
     f = @(t,x) -A*x - func_p_ode(x) - func_r_ode(t);

@@ -33,6 +33,7 @@ function [t, y] = MRBDF(E,A,func_p,func_r,y0,t,k,tol,m)
     
     % Construct the implicit MNA function of the circuit.
     f = @(x_p,x,t) A*x + E*x_p + func_p(x) + func_r(t);
+    f_F = @(x_p,x,t) A(idx_F,:)*x + E(idx_F,:)*x_p + func_p_F(x) + func_r_F(t);
 
     % Define jacobian calculation parameters and compute first Jacobian.
     Joptions.diffvar = 1;

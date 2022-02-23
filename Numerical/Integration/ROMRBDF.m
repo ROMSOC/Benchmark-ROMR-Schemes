@@ -24,12 +24,12 @@ function [t, y] = ROMRBDF(E,A,func_p,func_r,y0,t,k,tol,m,mor_object)
     end
     
     % Make partitioned functions for each partition.
-    B = strcat(regexprep(cellfun(@func2str, func_r, 'uni', 0), '^@\(t\)', ''), ';');
+    B = strcat(regexprep(cellfun(@func2str, func_r, 'uni', 0), {'^@\(t\)','\s'}, ''), ';');
     func_r_F = str2func(strcat('@(t) [', B{idx_F}, ']'));
     
     func_r = str2func(strcat('@(t) [', B{:}, ']'));
     
-    B = strcat(regexprep(cellfun(@func2str, func_p, 'uni', 0), '^@\(x\)', ''), ';');
+    B = strcat(regexprep(cellfun(@func2str, func_p, 'uni', 0), {'^@\(x\)','\s'}, ''), ';');
     func_p =  str2func(strcat('@(x) [', B{:}, ']'));
     func_p_F = str2func(strcat('@(x) [', B{idx_F}, ']'));
     func_p_gappy_selected = str2func(strcat('@(x) [', B{mor_object.S}, ']'));

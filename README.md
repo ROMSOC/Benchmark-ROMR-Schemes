@@ -7,8 +7,8 @@
 This document presents a benchmark case for the application of reduced order multirate schemes in a MATLAB environment.
 
 ## Description
-The benchmark case can be run by opening the ROMSOC.m file. Please, use the following link to run a user-friendly Jupyter Notebook to run the benchmarks:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-ROMR-schemes/HEAD?labpath=index.ipynb)
+The benchmark case can be run using the script file ROMSOC.m. Alternatively, please use the following link to run a user-friendly Jupyter Notebook ROMSOC.ipynb where the same benchmarks are implemented:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-ROMR-schemes/HEAD?labpath=ROMSOC.ipynb)
 
 ## Directory structure
 ```

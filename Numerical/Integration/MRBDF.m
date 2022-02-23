@@ -27,9 +27,11 @@ function [t, y] = MRBDF(E,A,func_p,func_r,y0,t,k,tol,m)
     B = strcat(regexprep(cellfun(@func2str, func_r, 'uni', 0), {'^@\(t\)','\s'}, ''), ';');
     
     func_r = str2func(strcat('@(t) [', B{:}, ']'));
+    func_r_F = str2func(strcat('@(t) [', B{idx_F}, ']'));
     
     B = strcat(regexprep(cellfun(@func2str, func_p, 'uni', 0), {'^@\(x\)','\s'}, ''), ';');
     func_p =  str2func(strcat('@(x) [', B{:}, ']'));    
+    func_p_F = str2func(strcat('@(x) [', B{idx_F}, ']'));
     
     % Construct the implicit MNA function of the circuit.
     f = @(x_p,x,t) A*x + E*x_p + func_p(x) + func_r(t);

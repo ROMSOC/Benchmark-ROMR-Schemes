@@ -10,10 +10,10 @@ function [t, y] = BDF(E,A,func_p,func_r,y0,t,k,tol)
     y = zeros(size(y0,1),size(t,2));
     y(:,1) = y0;
 
-    B = strcat(regexprep(cellfun(@func2str, func_p, 'uni', 0), '^@\(x\)', ''), ';');
+    B = strcat(regexprep(cellfun(@func2str, func_p, 'uni', 0), {'^@\(x\)','\s'}, ''), ';');
     func_p =  str2func(strcat('@(x) [', B{:}, ']'));
     
-    B = strcat(regexprep(cellfun(@func2str, func_r, 'uni', 0), '^@\(t\)', ''), ';');
+    B = strcat(regexprep(cellfun(@func2str, func_r, 'uni', 0), {'^@\(t\)','\s'}, ''), ';');
     func_r =  str2func(strcat('@(t) [', B{:}, ']'));
     
     f = @(x_p,x,t) A*x + E*x_p + func_p(x) + func_r(t);

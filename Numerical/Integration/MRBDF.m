@@ -24,11 +24,11 @@ function [t, y] = MRBDF(E,A,func_p,func_r,y0,t,k,tol,m)
     end
     
     % Make partitioned functions for each partition.
-    B = strcat(regexprep(cellfun(@func2str, func_r, 'uni', 0), '^@\(t\)', ''), ';');
+    B = strcat(regexprep(cellfun(@func2str, func_r, 'uni', 0), {'^@\(t\)','\s'}, ''), ';');
     
     func_r = str2func(strcat('@(t) [', B{:}, ']'));
     
-    B = strcat(regexprep(cellfun(@func2str, func_p, 'uni', 0), '^@\(x\)', ''), ';');
+    B = strcat(regexprep(cellfun(@func2str, func_p, 'uni', 0), {'^@\(x\)','\s'}, ''), ';');
     func_p =  str2func(strcat('@(x) [', B{:}, ']'));    
     
     % Construct the implicit MNA function of the circuit.

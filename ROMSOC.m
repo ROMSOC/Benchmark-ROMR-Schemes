@@ -25,7 +25,8 @@ addpath(genpath('Circuits'));
 
 
 % Select circuit
-fname = 'multirate_example_long_nonlin.cir';
+% fname = 'multirate_example_long_nonlin.cir';
+fname = 'multirate_example.cir';
 
 % Parse the netlist to matrices and function vectors
 [E, A, func_p, func_r, x0] = parse_netlist(fname);

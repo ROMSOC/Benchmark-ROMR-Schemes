@@ -1,14 +1,25 @@
 <img src="images/romsoclogo-logo.png" alt="ROMSOC logo"  width="150"/>
 
 # Benchmarks for the application of reduced order multirate schemes
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5171813.svg)](https://doi.org/10.5281/zenodo.5171813)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5171813.svg)](https://doi.org/10.5281/zenodo.5171813) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-ROMR-schemes/HEAD?labpath=ROMSOC.ipynb)
 
 ## Summary
 This document presents a benchmark case for the application of reduced order multirate schemes in a MATLAB environment.
 
 ## Description
-The benchmark case can be run using the script file ``ROMSOC.m``. Alternatively, please use the following link to run a user-friendly Jupyter Notebook ``ROMSOC.ipynb`` where the same benchmarks are implemented:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-ROMR-schemes/HEAD?labpath=ROMSOC.ipynb)
+The benchmark case can be run using the script file ``ROMSOC.m``. 
+
+### Run Jupyter notebooks
+The entire benchmark repository can be executed in a provided Docker container where a full installation of Octave is available. Once you have clone or downloaded this repository, to build the container just type
+```bash
+docker build -t benchmarks-ROMR-schemes . 
+```
+and for running it locally:
+```bash
+docker run -u 0 -it --rm -p 8888:8888 benchmarks-ROMR-schemes jupyter-lab --ip=0.0.0.0 --port=8888 --allow-root
+```
+Alternatively, please use the following link to run a user-friendly Jupyter Notebook ``ROMSOC.ipynb`` where the same benchmarks are implemented:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-ROMR-schemes/HEAD?labpath=ROMSOC.ipynb) Please, notice that mybinder cloud computations are limited to 2GB of RAM memory.
 
 ## Directory structure
 ```

@@ -16,7 +16,7 @@ docker build -t benchmarks-ROMR-schemes .
 ```
 and for running it locally:
 ```bash
-docker run -u 0 -it --rm -p 8888:8888 benchmarks-ROMR-schemes jupyter-lab --ip=0.0.0.0 --port=8888 --allow-root
+docker run -it --rm -p 8888:8888 benchmarks-ROMR-schemes jupyter-lab --ip=0.0.0.0 --port=8888 --allow-root
 ```
 Alternatively, please use the following link to run a user-friendly Jupyter Notebook ``ROMSOC.ipynb`` where the same benchmarks are implemented:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-ROMR-schemes/HEAD?labpath=ROMSOC.ipynb) Please, notice that mybinder cloud computations are limited to 2GB of RAM memory.

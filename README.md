@@ -4,7 +4,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5171813.svg)](https://doi.org/10.5281/zenodo.5171813) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-ROMR-schemes/HEAD?labpath=ROMSOC.ipynb)
 
 ## Summary
-This document presents a benchmark case for the application of reduced order multirate schemes in a MATLAB environment.
+This document presents a benchmark case for the application of reduced order multirate schemes in a MATLAB/Octave environment.
 
 ## Description
 The benchmark case can be run using the script file ``ROMSOC.m``. 
